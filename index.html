@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="calculator">
+    <meta name="keywords" content="HTML, SASS, JavaScript">
+    <meta name="author" content="Kostas Petrou">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script> 
+</head>
+<body>
+  <div class="wrapper">
+    <div id="calculatorWrapper" class="calcBox">
+
+      <div id="calculationContainer" class="screenCol">
+        <div class="calcu">
+          <span id="calculationDesc" class="descrStyle">=</span>
+        </div>
+        <div class="resu">
+          <span id="result" class="textStyle"></span>
+        </div>
+      </div>
+
+      <div id="actionContainer" class="actionBox">
+
+        <div id="row1" class="actions-rows">
+          <button class="operators" onclick="allClear()">AC</button>
+          <button id="btn" class="operators" onclick="del()">DEL</button>
+          <button class="operators" onclick="sqroot()">&#8730;</button>
+          <button class="operators basic" onclick="divi()">/</button>
+        </div>
+        <div id="row2" class="actions-rows">
+          <button class="numbers" onclick="seven()">7</button>
+          <button class="numbers" onclick="eight()">8</button>
+          <button class="numbers" onclick="nine()">9</button>
+          <button class="operators basic" onclick="multi()">x</button>
+        </div>
+        <div id="row3" class="actions-rows">
+          <button class="numbers" onclick="four()">4</button>
+          <button class="numbers" onclick="five()">5</button>
+          <button class="numbers" onclick="six()">6</button>
+          <button class="operators basic" onclick="minus()">-</button>
+        </div>
+        <div id="row4" class="actions-rows">
+          <button id="oneB" class="numbers" onclick="one()">1</button>
+          <button class="numbers" onclick="two()">2</button>
+          <button class="numbers" onclick="three()">3</button>
+          <button class="operators basic" onclick="plus()">+</button>
+        </div>
+        <div id="row5" class="actions-rows">
+          <button class="roundleft" onclick="modulus()">%</button>
+          <button class="numbers" onclick="zero()">0</button>
+          <button class="numbers" onclick="dot()">.</button>
+          <button class="equal roundright" onclick="result()">=</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
